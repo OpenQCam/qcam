@@ -1,0 +1,45 @@
+//This is auto-gen by iCamera build system, please add define in scripts/icam_config
+#ifndef _EVENTDEFINE_H
+#define _EVENTDEFINE_H
+
+//little endian format
+#define CLOUD_MSG_SYNC 0x0400
+#define CLOUD_MSG_ERROR 0x1000
+#define CLOUD_MSG_EVENT 0x0800
+#define CLOUD_MSG_CMDRESP 0x0100
+#define CLOUD_MSG_INFO 0x0200
+#define CLOUD_MSG_DATA 0x2000
+#define DEVICE_EVENT 0x0080
+
+//info subtype
+#define INFO_SYSTEM 0x0000
+#define INFO_AUDIO_RMS 0x0200
+#define INFO_NETWORK 0x0100
+
+//data subtype
+#define DATA_JPG 0x0100
+
+//event subtype
+#define EVT_FW_DOWNLOAD 0x0002
+#define EVT_ALARM_CANCEL 0x0004
+#define EVT_IN_MJPG_CONNECTED 0x0003
+#define EVT_IN_MJPG_DISCONNECTED 0x0103
+#define EVT_OUT_MJPG_CONNECTED 0x0203
+#define EVT_OUT_MJPG_DISCONNECTED 0x0303
+#define EVT_PUSH_JPG 0x0100
+#define EVT_PUSH_VIDEO 0x0000
+#define EVT_AUDIO_ALARM 0x0101
+#define EVT_PIR_ALARM 0x0001
+#define EVT_WPS_FAILED 0x0005
+#define EVT_WPS_SUCCESS 0x0105
+#define EVT_IN_AREC_CONNECTED 0x0006
+#define EVT_IN_AREC_DISCONNECTED 0x0106
+#define EVT_OUT_AREC_CONNECTED 0x0206
+#define EVT_OUT_AREC_DISCONNECTED 0x0306
+#define EVT_IN_AVC_CONNECTED 0x0007
+#define EVT_IN_AVC_DISCONNECTED 0x0107
+#define EVT_OUT_AVC_CONNECTED 0x0207
+#define EVT_OUT_AVC_DISCONNECTED 0x0307
+#
+
+#endif /*_EVENTDEFINE_H*/

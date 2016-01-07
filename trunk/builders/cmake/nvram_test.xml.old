@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<MAP isArray="false" name="">
+  <MAP isArray="false" name="rtdev">
+    <STR name="iCamera.Device.serialNo">cam12</STR>
+  </MAP>
+</MAP>

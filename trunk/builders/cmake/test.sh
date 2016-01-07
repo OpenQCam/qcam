@@ -1,0 +1,15 @@
+#curl http://10.10.10.101:5555/EnumerateCamera?params=dXJpPXJ0bXA6Ly9JUC9saXZlL215U3RyZWFtIGxvY2Fsc3RyZWFtbmFtZT10ZXN0U3RyZWFt
+#curl http://10.10.10.101:5555/ConnectCamera?params=dXJpPXJ0bXA6Ly9JUC9saXZlL215U3RyZWFtIGxvY2Fsc3RyZWFtbmFtZT10ZXN0U3RyZWFt
+#curl http://10.10.10.101:5555/StartRecording?params=Zm9ybWF0PWF2Yw==
+#curl http://10.10.10.101:5555/StartCapture?params=dXJpPXJ0bXA6Ly9JUC9saXZlL215U3RyZWFtIGxvY2Fsc3RyZWFtbmFtZT10ZXN0U3RyZWFt
+#curl http://10.10.10.101:5555/StartAudio?params=dXJpPXJ0bXA6Ly9JUC9saXZlL215U3RyZWFtIGxvY2Fsc3RyZWFtbmFtZT10ZXN0U3RyZWFt
+#curl http://10.10.10.101:5555/StartAudioRecording?params=dXJpPXJ0bXA6Ly9JUC9saXZlL215U3RyZWFtIGxvY2Fsc3RyZWFtbmFtZT10ZXN0U3RyZWFt
+
+
+curl http://localhost:5555/EnumerateCamera?params=dXJpPXJ0bXA6Ly9JUC9saXZlL215U3RyZWFtIGxvY2Fsc3RyZWFtbmFtZT10ZXN0U3RyZWFt
+curl http://localhost:5555/ConnectCamera?params=dXJpPXJ0bXA6Ly9JUC9saXZlL215U3RyZWFtIGxvY2Fsc3RyZWFtbmFtZT10ZXN0U3RyZWFt
+curl http://localhost:5555/StartCapture?params=dXJpPXJ0bXA6Ly9JUC9saXZlL215U3RyZWFtIGxvY2Fsc3RyZWFtbmFtZT10ZXN0U3RyZWFt
+curl http://localhost:5555/StartAudio?params=dXJpPXJ0bXA6Ly9JUC9saXZlL215U3RyZWFtIGxvY2Fsc3RyZWFtbmFtZT10ZXN0U3RyZWFt
+curl http://localhost:5555/StartAudioRecording?params=dXJpPXJ0bXA6Ly9JUC9saXZlL215U3RyZWFtIGxvY2Fsc3RyZWFtbmFtZT10ZXN0U3RyZWFt
+
+

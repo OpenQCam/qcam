@@ -1,0 +1,9 @@
+#ifndef VERSION_H
+#define VERSION_H
+
+// refer to https://github.com/pmirshad/cmake-with-git-metadata
+#define GIT_BRANCH "@GIT_BRANCH@"
+#define GIT_COMMIT_HASH "@GIT_COMMIT_HASH@"
+#define GIT_APPLICATION_REVISION "@GIT_APPLICATION_REVISION@"
+
+#endif

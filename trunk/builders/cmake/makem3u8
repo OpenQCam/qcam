@@ -1,0 +1,62 @@
+#!/bin/bash
+# (C) Copyright 2012 by Madhawa Jayanath (madhawa@101g.com)
+#
+#
+# This program is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
+# Foundation; either version 3 of the License, or (at your option) any later
+# version.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+# details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
+# Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+array=(`ls -1 /usr/share/nginx/html/qic*.ts`)
+len=${#array[*]}
+arr2=($(for a in "${array[@]}"; do echo $a | cut -c26-100 | sed 's/.ts//g'; done | sort -k1,1n))
+
+tmp=`echo "$len-2" | bc`
+seq=`echo "/usr/share/nginx/html/qic${arr2[$tmp]}.ts"| cut -c26-100 | sed 's/.ts//g'`
+seq=`echo "$seq+1" | bc`
+
+tmp=`echo "$len-2" | bc`
+durationa=`mediainfo --Inform='Video;%Duration/String3%' "/usr/share/nginx/html/qic${arr2[$tmp]}.ts" | cut -c7-11 | bc`
+#durationa=`cat /usr/share/nginx/html/qic${arr2[$tmp]}.te`
+durationa=`printf %0.f $durationa`
+
+tmp=`echo "$len-1" | bc`
+durationb=`mediainfo --Inform='Video;%Duration/String3%' "/usr/share/nginx/html/qic${arr2[$tmp]}.ts" | cut -c7-11 | bc`
+#durationb=`cat /usr/share/nginx/html/qic${arr2[$tmp]}.te`
+durationb=`printf %0.f $durationb`
+
+/bin/rm -f /usr/share/nginx/html/qic32.m3u8
+touch /usr/share/nginx/html/qic32.m3u8
+echo "#EXTM3U" >> /usr/share/nginx/html/qic32.m3u8
+echo "#EXT-X-VERSION:1" >> /usr/share/nginx/html/qic32.m3u8
+echo "#EXT-X-ALLOW-CACHE:NO" >> /usr/share/nginx/html/qic32.m3u8
+if [ $durationa -gt $durationb ] ; then
+echo "#EXT-X-TARGETDURATION:$durationa" >> /usr/share/nginx/html/qic32.m3u8
+else
+echo "#EXT-X-TARGETDURATION:$durationb" >> /usr/share/nginx/html/qic32.m3u8
+fi
+echo "#EXT-X-MEDIA-SEQUENCE:$seq" >> /usr/share/nginx/html/qic32.m3u8
+
+
+
+
+echo "#EXTINF:$durationa," >> /usr/share/nginx/html/qic32.m3u8
+tmp=`echo "$len-2" | bc`
+SUBSTRING=`echo "/usr/share/nginx/html/qic${arr2[$tmp]}.ts"| cut -c22-35`
+echo "http://10.0.0.121$SUBSTRING" >> /usr/share/nginx/html/qic32.m3u8
+
+echo "#EXTINF:$durationb," >> /usr/share/nginx/html/qic32.m3u8
+tmp=`echo "$len-1" | bc`
+SUBSTRING=`echo "/usr/share/nginx/html/qic${arr2[$tmp]}.ts"| cut -c22-35`
+echo "http://10.0.0.121$SUBSTRING" >> /usr/share/nginx/html/qic32.m3u8
+
+exit

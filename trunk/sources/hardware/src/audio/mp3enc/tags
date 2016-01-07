@@ -1,0 +1,394 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALIGNING	./bitstream.h	26;"	d
+APPNAME	./Makefile	/^APPNAME=MP3fxpEnc$/;"	m
+AR	./Makefile	/^AR=$(XPREFIX)ar$/;"	m
+ASCII	./bitstream.h	28;"	d
+BF_BitstreamElement	./formatbits.h	/^} BF_BitstreamElement;$/;"	t	typeref:struct:__anon2
+BF_BitstreamFrame	./formatbits.c	/^void BF_BitstreamFrame( BF_FrameData *frameInfo, BF_FrameResults *results, void *config )$/;"	f
+BF_BitstreamPart	./formatbits.h	/^} BF_BitstreamPart;$/;"	t	typeref:struct:__anon3
+BF_FrameData	./formatbits.h	/^typedef struct BF_FrameData$/;"	s
+BF_FrameData	./formatbits.h	/^} BF_FrameData;$/;"	t	typeref:struct:BF_FrameData
+BF_FrameResults	./formatbits.h	/^typedef struct BF_FrameResults$/;"	s
+BF_FrameResults	./formatbits.h	/^} BF_FrameResults;$/;"	t	typeref:struct:BF_FrameResults
+BF_LoadHolderFromBitstreamPart	./formatbits.c	/^BF_PartHolder *BF_LoadHolderFromBitstreamPart( BF_PartHolder *theHolder, BF_BitstreamPart *thePart )$/;"	f
+BF_NewHolderFromBitstreamPart	./formatbits.c	/^BF_PartHolder *BF_NewHolderFromBitstreamPart( BF_BitstreamPart *thePart )$/;"	f
+BF_PartHolder	./formatbits.h	/^typedef struct BF_PartHolder$/;"	s
+BF_PartHolder	./formatbits.h	/^} BF_PartHolder;$/;"	t	typeref:struct:BF_PartHolder
+BF_PartLength	./formatbits.c	/^int BF_PartLength( BF_BitstreamPart *part )$/;"	f
+BF_addElement	./formatbits.c	/^BF_PartHolder *BF_addElement( BF_PartHolder *thePH, BF_BitstreamElement *theElement )$/;"	f
+BF_addEntry	./formatbits.c	/^BF_PartHolder *BF_addEntry( BF_PartHolder *thePH,$/;"	f
+BF_freePartHolder	./formatbits.c	/^BF_PartHolder *BF_freePartHolder( BF_PartHolder *thePH )$/;"	f
+BF_newPartHolder	./formatbits.c	/^BF_PartHolder *BF_newPartHolder( unsigned long int max_elements )$/;"	f
+BF_resizePartHolder	./formatbits.c	/^BF_PartHolder *BF_resizePartHolder( BF_PartHolder *oldPH, int max_elements )$/;"	f
+BINARY	./bitstream.h	27;"	d
+BITSTREAM_H	./bitstream.h	2;"	d
+BLKSIZE	./types.h	25;"	d
+BS_FORMAT	./bitstream.h	31;"	d
+BUFFER_SIZE	./bitstream.h	34;"	d
+BitCount	./formatbits.c	/^static int BitCount       = 0;$/;"	v	file:
+BitsFcnPtr	./formatbits.h	/^typedef void (*BitsFcnPtr)( unsigned long int value, unsigned int length, void *config );$/;"	t
+BitsRemaining	./formatbits.c	/^static int BitsRemaining  = 0;$/;"	v	file:
+CBLIMIT	./L3loop.h	5;"	d
+CC	./Makefile	/^CC=$(XPREFIX)gcc$/;"	m
+CFLAGS	./Makefile	/^CFLAGS=-fno-exceptions -Wall -O2 -fsigned-char $/;"	m
+CXX	./Makefile	/^CXX=$(XPREFIX)g++$/;"	m
+C_SRCS	./Makefile	/^C_SRCS=$(shell ls *.c)$/;"	m
+DATA	./wave.c	13;"	d	file:
+HAN_SIZE	./types.h	26;"	d
+HTN	./huffman.h	2;"	d
+HUFFBITS	./huffman.h	1;"	d
+HuffmanCode	./L3bitstrea.c	/^int HuffmanCode(int table_select, int x, int y, unsigned int *code, $/;"	f
+Huffmancodebits	./L3bitstrea.c	/^Huffmancodebits( BF_PartHolder **pph, int *ix, gr_info *gi, config_t *config )$/;"	f	file:
+INCLUDE	./Makefile	/^INCLUDE=-I.$/;"	m
+L3LOOP_H	./L3loop.h	2;"	d
+L3SUBBAND_H	./L3subband.h	2;"	d
+L3_BITSTREAM_H	./L3bitstrea.h	2;"	d
+L3_MDCT_H	./L3mdct.h	2;"	d
+L3_bitstream_t	./L3bitstrea.h	/^typedef   bitstream_t L3_bitstream_t;$/;"	t
+L3_compress	./Layer3.c	/^void L3_compress(config_t *config)$/;"	f
+L3_find_bitrate_index	./Layer3.c	/^int L3_find_bitrate_index(int bitr)$/;"	f
+L3_find_samplerate_index	./Layer3.c	/^int L3_find_samplerate_index(long freq)$/;"	f
+L3_format_bitstream	./L3bitstrea.c	/^L3_format_bitstream( int              l3_enc[2][2][samp_per_frame2],$/;"	f
+L3_huffman_coder_count1	./L3bitstrea.c	/^int L3_huffman_coder_count1( BF_PartHolder **pph, struct huffcodetab *h, int v, int w, int x, int y )$/;"	f
+L3_iteration_loop	./L3loop.c	/^void L3_iteration_loop(double          pe[][2], $/;"	f
+L3_loop_initialise	./L3loop.c	/^void L3_loop_initialise(void)$/;"	f
+L3_mdct_initialise	./L3mdct.c	/^void L3_mdct_initialise(void)$/;"	f
+L3_mdct_sub	./L3mdct.c	/^void L3_mdct_sub(long sb_sample[2][3][18][SBLIMIT], $/;"	f
+L3_psy_ratio_t	./Layer3.h	/^} L3_psy_ratio_t;$/;"	t	typeref:struct:__anon8
+L3_psy_xmin_t	./Layer3.h	/^} L3_psy_xmin_t;$/;"	t	typeref:struct:__anon9
+L3_scalefac_t	./Layer3.h	/^} L3_scalefac_t;$/;"	t	typeref:struct:__anon10
+L3_set_config_mpeg_defaults	./Layer3.c	/^void L3_set_config_mpeg_defaults(mpeg_t *mpeg) {$/;"	f
+L3_side_info_t	./Layer3.h	/^} L3_side_info_t;$/;"	t	typeref:struct:__anon5
+L3_subband_initialise	./L3SubBand.c	/^void L3_subband_initialise()$/;"	f
+L3_window_filter_subband	./L3SubBand.c	/^void L3_window_filter_subband(short **buffer, long s[SBLIMIT] , int k)$/;"	f
+LAYER3_H	./Layer3.h	2;"	d
+LIBDIRS	./Makefile	/^LIBDIRS=$/;"	m
+LIBNAME	./Makefile	/^LIBNAME=$(SONAME).0.0$/;"	m
+LIBOBJS	./Makefile	/^LIBOBJS=$(shell echo $(OBJFILES) | sed -e "s\/Main.o\/\/" -e "s\/wave.o\/\/")$/;"	m
+LIBS	./Makefile	/^LIBS=-lm$/;"	m
+LN2	./types.h	23;"	d
+LN_TO_LOG10	./types.h	24;"	d
+MAX	./bitstream.h	37;"	d
+MAX_CHANNELS	./formatbits.h	17;"	d
+MAX_GRANULES	./formatbits.h	21;"	d
+MAX_LENGTH	./bitstream.h	22;"	d
+MIN	./bitstream.h	36;"	d
+MINIMUM	./bitstream.h	21;"	d
+MODE_MONO	./types.h	116;"	d
+MXOFF	./huffman.h	3;"	d
+MYSideInfo	./formatbits.c	/^} MYSideInfo;$/;"	t	typeref:struct:__anon1	file:
+NOREF	./huffman.c	82;"	d	file:
+OBJFILES	./Makefile	/^OBJFILES=$(C_SRCS:.c=.o)$/;"	m
+PI	./types.h	17;"	d
+PI12	./types.h	19;"	d
+PI36	./types.h	20;"	d
+PI4	./types.h	18;"	d
+PI64	./types.h	21;"	d
+PartHoldersInitialized	./L3bitstrea.c	/^int PartHoldersInitialized = 0;$/;"	v
+PartWriteFcnPtr	./formatbits.c	/^typedef int (*PartWriteFcnPtr)( BF_BitstreamPart *part, BF_FrameResults *results );$/;"	t	file:
+PutBits	./formatbits.c	/^static BitsFcnPtr PutBits = NULL;$/;"	v	file:
+READ_MODE	./bitstream.h	24;"	d
+RESERVOIR_H	./reservoir.h	2;"	d
+ResvAdjust	./reservoir.c	/^void ResvAdjust(gr_info *gi, L3_side_info_t *l3_side, int mean_bits, config_t *config )$/;"	f
+ResvFrameBegin	./reservoir.c	/^void ResvFrameBegin(L3_side_info_t *l3_side, int mean_bits, int frameLength )$/;"	f
+ResvFrameEnd	./reservoir.c	/^void ResvFrameEnd(L3_side_info_t *l3_side, int mean_bits, config_t *config )$/;"	f
+ResvMax	./reservoir.c	/^static int ResvMax  = 0; \/* in bits *\/$/;"	v	file:
+ResvMaxBits	./reservoir.c	/^int ResvMaxBits (L3_side_info_t *l3_side, double *pe, int mean_bits, config_t *config )$/;"	f
+ResvSize	./reservoir.c	/^static int ResvSize = 0; \/* in bits *\/$/;"	v	file:
+SBLIMIT	./types.h	30;"	d
+SCALE	./types.h	29;"	d
+SCALE_BLOCK	./types.h	27;"	d
+SCALE_RANGE	./types.h	28;"	d
+SFB_LMAX	./L3loop.h	6;"	d
+SILength	./formatbits.c	/^  int SILength;$/;"	m	struct:__anon1	file:
+SILength	./formatbits.h	/^    int SILength;$/;"	m	struct:BF_FrameResults
+SONAME	./Makefile	/^SONAME=libshine-fxp.so.1$/;"	m
+SQRT2	./types.h	22;"	d
+STNAME	./Makefile	/^STNAME=libshine-fxp.la$/;"	m
+STRIP	./Makefile	/^STRIP=$(XPREFIX)strip$/;"	m
+TABLES_H	./tables.h	2;"	d
+TYPES_H	./types.h	2;"	d
+ThisFrameSize	./formatbits.c	/^static int ThisFrameSize  = 0;$/;"	v	file:
+WAVE	./Main.c	25;"	d	file:
+WAVE	./wave.c	12;"	d	file:
+WAVE_H	./wave.h	2;"	d
+WAVE_PCM_AIFF	./types.h	114;"	d
+WAVE_PCM_HILO	./types.h	113;"	d
+WAVE_PCM_LOHI	./types.h	112;"	d
+WAVE_RIFF_PCM	./types.h	111;"	d
+WRITE_MODE	./bitstream.h	25;"	d
+WriteMainDataBits	./formatbits.c	/^WriteMainDataBits( unsigned long int val,$/;"	f
+XPREFIX	./Makefile	/^XPREFIX= \/opt\/buildroot-gcc342\/bin\/mipsel-linux-$/;"	m
+_FORMAT_BITSTREAM_H	./formatbits.h	2;"	d
+__INLINE_ASM	./L3SubBand.c	3;"	d	file:
+__INLINE_ASM	./L3loop.c	3;"	d	file:
+__INLINE_ASM	./L3mdct.c	3;"	d	file:
+__s32	./mult_noarch_gcc.h	7;"	d
+__s64	./mult_noarch_gcc.h	6;"	d
+abs_and_sign	./L3bitstrea.c	/^int abs_and_sign( int *x )$/;"	f
+address1	./Layer3.h	/^        unsigned address1;$/;"	m	struct:__anon4
+address2	./Layer3.h	/^        unsigned address2;$/;"	m	struct:__anon4
+address3	./Layer3.h	/^        unsigned address3;$/;"	m	struct:__anon4
+big_values	./Layer3.h	/^        unsigned big_values;$/;"	m	struct:__anon4
+bigv_bitcount	./L3loop.c	/^int bigv_bitcount(int ix[samp_per_frame2], gr_info *gi)$/;"	f
+bigv_tab_select	./L3loop.c	/^void bigv_tab_select( int ix[samp_per_frame2], gr_info *cod_info )$/;"	f
+bin_search_StepSize	./L3loop.c	/^int bin_search_StepSize(int desired_rate, int ix[samp_per_frame2],$/;"	f
+bit_stream_struc	./bitstream.h	/^typedef struct  bit_stream_struc {$/;"	s
+bitr	./types.h	/^    int  bitr;      \/* + *\/ \/* Must conform to known bitrate - see Main.c *\/$/;"	m	struct:__anon12
+bitrate_index	./types.h	/^    int  bitrate_index;     \/* + *\/ \/* See Main.c and Layer3.c *\/$/;"	m	struct:__anon12
+bits	./types.h	/^    int  bits; $/;"	m	struct:__anon11
+bits_per_frame	./types.h	/^    long bits_per_frame;$/;"	m	struct:__anon12
+bits_per_slot	./types.h	/^    long bits_per_slot;$/;"	m	struct:__anon12
+bitstream_t	./bitstream.h	/^} bitstream_t;$/;"	t	typeref:struct:bit_stream_struc
+bool	./types.h	/^typedef unsigned char bool;$/;"	t
+bs	./L3bitstrea.c	/^static bitstream_t *bs = NULL;$/;"	v	file:
+buf	./bitstream.h	/^    unsigned char *buf;         \/* bit stream buffer *\/$/;"	m	struct:bit_stream_struc
+buf_bit_idx	./bitstream.h	/^    int         buf_bit_idx;    \/* pointer to top bit of top byte in buffer *\/$/;"	m	struct:bit_stream_struc
+buf_byte_idx	./bitstream.h	/^    int         buf_byte_idx;   \/* pointer to top byte in buffer *\/$/;"	m	struct:bit_stream_struc
+buf_size	./bitstream.h	/^    int         buf_size;       \/* size of buffer (in number of bytes) *\/$/;"	m	struct:bit_stream_struc
+c	./L3mdct.c	/^static double c[8] = { -0.6,-0.535,-0.33,-0.185,-0.095,-0.041,-0.0142, -0.0037 };$/;"	v	file:
+ca	./L3mdct.c	/^static long ca[8];$/;"	v	file:
+calc_runlen	./L3loop.c	/^void calc_runlen( int ix[samp_per_frame2], gr_info *cod_info )$/;"	f
+calc_scfsi	./L3loop.c	/^void calc_scfsi( L3_side_info_t *l3_side,$/;"	f
+calc_xmin	./L3loop.c	/^void calc_xmin(L3_psy_ratio_t *ratio,$/;"	f
+ch	./Layer3.h	/^        } ch[2];$/;"	m	struct:__anon5::__anon6	typeref:struct:__anon5::__anon6::__anon7
+channelSI	./formatbits.h	/^    BF_BitstreamPart *channelSI[MAX_CHANNELS];$/;"	m	struct:BF_FrameData
+channelSIPH	./L3bitstrea.c	/^BF_PartHolder *channelSIPH[ MAX_CHANNELS ];$/;"	v
+channelSIPH	./formatbits.c	/^  BF_PartHolder *channelSIPH[MAX_CHANNELS];$/;"	m	struct:__anon1	file:
+channels	./types.h	/^    int  channels;      \/* + *\/$/;"	m	struct:__anon11
+check_config	./Main.c	/^static void check_config(config_t *config)$/;"	f	file:
+close_bit_stream	./bitstream.c	/^void close_bit_stream(bitstream_t *bs)$/;"	f
+close_bit_stream	./g_includes.h	18;"	d
+codedData	./formatbits.h	/^    BF_BitstreamPart *codedData[MAX_GRANULES][MAX_CHANNELS];$/;"	m	struct:BF_FrameData
+codedDataPH	./L3bitstrea.c	/^BF_PartHolder *codedDataPH[ MAX_GRANULES ][ MAX_CHANNELS ];$/;"	v
+config_t	./types.h	/^} config_t;$/;"	t	typeref:struct:__anon13
+copyright	./types.h	/^    int copyright;  \/* + *\/$/;"	m	struct:__anon12
+cos_l	./L3mdct.c	/^static long cos_l[18][36];$/;"	v	file:
+count1	./Layer3.h	/^        unsigned count1;$/;"	m	struct:__anon4
+count1_bitcount	./L3loop.c	/^int count1_bitcount(int ix[samp_per_frame2], gr_info *cod_info)$/;"	f
+count1table_select	./Layer3.h	/^        unsigned count1table_select;$/;"	m	struct:__anon4
+count_bit	./L3loop.c	/^int count_bit(int ix[samp_per_frame2], $/;"	f
+crc	./types.h	/^    int crc;$/;"	m	struct:__anon12
+cs	./L3mdct.c	/^static long cs[8];$/;"	v	file:
+dmask	./huffman.c	/^HUFFBITS dmask = 1 << (((sizeof(HUFFBITS))<<3)-1);$/;"	v
+drain_into_ancillary_data	./L3bitstrea.c	/^drain_into_ancillary_data( int lengthInBits )$/;"	f	file:
+e	./L3loop.h	4;"	d
+element	./formatbits.h	/^    BF_BitstreamElement *element;$/;"	m	struct:__anon3
+emph	./types.h	/^    int  emph;      \/* + *\/ \/* De-emphasis *\/$/;"	m	struct:__anon12
+empty_buffer	./bitstream.c	/^void empty_buffer(bitstream_t *bs, int minimum, config_t *config)$/;"	f
+en_dif_krit	./L3loop.c	211;"	d	file:
+en_scfsi_band_krit	./L3loop.c	212;"	d	file:
+en_tot_krit	./L3loop.c	210;"	d	file:
+encodeMainData	./L3bitstrea.c	/^static void encodeMainData(int l3_enc[2][2][samp_per_frame2],$/;"	f	file:
+encodeSideInfo	./L3bitstrea.c	/^static int encodeSideInfo( L3_side_info_t  *si, config_t *config )$/;"	f	file:
+enwindow	./tables.c	/^double enwindow[] = {$/;"	v
+eob	./bitstream.h	/^    int         eob;            \/* end of buffer index *\/$/;"	m	struct:bit_stream_struc
+eobs	./bitstream.h	/^    int         eobs;           \/* end of bit stream flag *\/$/;"	m	struct:bit_stream_struc
+error	./Main.c	/^void error(char *s)$/;"	f
+ew	./L3SubBand.c	/^static long ew[HAN_SIZE];$/;"	v	file:
+ext	./types.h	/^    int ext;$/;"	m	struct:__anon12
+false	./g_includes.h	5;"	d
+false	./types.h	108;"	d
+file	./types.h	/^    FILE *file;$/;"	m	struct:__anon11
+file	./types.h	/^    FILE *file;$/;"	m	struct:__anon12
+fl	./L3SubBand.c	/^static long fl[SBLIMIT][64];$/;"	v	file:
+format	./bitstream.h	/^    char        format;$/;"	m	struct:bit_stream_struc
+frameData	./L3bitstrea.c	/^BF_FrameData    *frameData    = NULL;$/;"	v
+frameLength	./formatbits.c	/^  int frameLength;$/;"	m	struct:__anon1	file:
+frameLength	./formatbits.h	/^    int              frameLength;$/;"	m	struct:BF_FrameData
+frameResults	./L3bitstrea.c	/^BF_FrameResults *frameResults = NULL;$/;"	v
+frameSI	./formatbits.h	/^    BF_BitstreamPart *frameSI;$/;"	m	struct:BF_FrameData
+frameSIPH	./L3bitstrea.c	/^BF_PartHolder *frameSIPH;$/;"	v
+frameSIPH	./formatbits.c	/^  BF_PartHolder *frameSIPH;$/;"	m	struct:__anon1	file:
+get_pcm	./types.h	/^    int  (*get_pcm)(short buffer[2][samp_per_frame], void *config_in);$/;"	m	struct:__anon13
+get_side_info	./formatbits.c	/^MYSideInfo* get_side_info()$/;"	f
+global_gain	./Layer3.h	/^        unsigned global_gain;$/;"	m	struct:__anon4
+gr	./Layer3.h	/^    } gr[2];$/;"	m	struct:__anon5	typeref:struct:__anon5::__anon6
+gr_info	./Layer3.h	/^} gr_info;$/;"	t	typeref:struct:__anon4
+header	./formatbits.h	/^    BF_BitstreamPart *header;$/;"	m	struct:BF_FrameData
+headerPH	./L3bitstrea.c	/^BF_PartHolder *headerPH;$/;"	v
+headerPH	./formatbits.c	/^  BF_PartHolder *headerPH;$/;"	m	struct:__anon1	file:
+hget1bit	./bitstream.h	60;"	d
+hlen	./huffman.h	/^  unsigned char *hlen;  \/*pointer to array[xlen][ylen]          *\/$/;"	m	struct:huffcodetab
+hs	./huffman.c	/^unsigned int hs = sizeof(HUFFBITS)<<3;$/;"	v
+ht	./huffman.c	/^struct huffcodetab ht[HTN] =$/;"	v	typeref:struct:huffcodetab
+huffcodetab	./huffman.h	/^struct huffcodetab {$/;"	s
+infile	./types.h	/^    char* infile;   \/* For calling app's convenience *\/$/;"	m	struct:__anon13
+inner_loop	./L3loop.c	/^static int inner_loop(int ix[samp_per_frame2], $/;"	f	file:
+int2idx	./L3loop.c	/^static long int2idx[10000]; \/* x**(3\/4)   for x = 0..9999 *\/$/;"	v	file:
+ix_max	./L3loop.c	/^int ix_max( int ix[samp_per_frame2], unsigned int begin, unsigned int end )$/;"	f
+l	./Layer3.h	/^        double  l[2][2][21];$/;"	m	struct:__anon9
+l	./Layer3.h	/^    double  l[2][2][21];$/;"	m	struct:__anon8
+l	./Layer3.h	/^    int l[2][2][22];            \/* [cb] *\/$/;"	m	struct:__anon10
+l	./tables.h	/^   int l[23];$/;"	m	struct:scalefac_struct
+layr	./types.h	/^    int  layr;      $/;"	m	struct:__anon12
+length	./formatbits.h	/^    unsigned int length;$/;"	m	struct:__anon2
+length	./types.h	/^    long length;$/;"	m	struct:__anon11
+linbits	./huffman.h	/^  unsigned int linbits; \/*number of linbits                     *\/$/;"	m	struct:huffcodetab
+linmax	./huffman.h	/^  unsigned int linmax;  \/*max number to be stored in linbits    *\/$/;"	m	struct:huffcodetab
+main	./Main.c	/^int main(int argc, char **argv)$/;"	f
+mainDataLength	./formatbits.h	/^    int mainDataLength;$/;"	m	struct:BF_FrameResults
+main_data	./formatbits.c	/^main_data( BF_FrameData *fi, BF_FrameResults *results )$/;"	f
+main_data_begin	./Layer3.h	/^    int main_data_begin; \/* unsigned -> int *\/$/;"	m	struct:__anon5
+max_elements	./formatbits.h	/^    int max_elements;$/;"	m	struct:BF_PartHolder
+mode	./bitstream.h	/^    int         mode;           \/* bit stream open in read or write mode *\/$/;"	m	struct:bit_stream_struc
+mode	./types.h	/^    int  mode;      \/* + *\/ \/* Stereo mode *\/$/;"	m	struct:__anon12
+mode_ext	./types.h	/^    int mode_ext;$/;"	m	struct:__anon12
+mpeg	./types.h	/^    mpeg_t mpeg;$/;"	m	struct:__anon13
+mpeg_t	./types.h	/^} mpeg_t;$/;"	t	typeref:struct:__anon12
+mul	./mult_noarch_gcc.h	9;"	d
+mul	./mult_sarm_gcc.h	/^static inline long mul(long x,long y) { $/;"	f
+mulr	./mult_noarch_gcc.h	13;"	d
+mulr	./mult_sarm_gcc.h	/^static inline long mulr(long x, long y) {$/;"	f
+muls	./mult_noarch_gcc.h	11;"	d
+muls	./mult_sarm_gcc.h	/^static inline long muls(long x, long y) {$/;"	f
+mulsr	./mult_noarch_gcc.h	15;"	d
+mulsr	./mult_sarm_gcc.h	/^static inline long mulsr(long x, long y) {$/;"	f
+nChannels	./formatbits.c	/^  int nChannels;$/;"	m	struct:__anon1	file:
+nChannels	./formatbits.h	/^    int              nChannels;$/;"	m	struct:BF_FrameData
+nGranules	./formatbits.c	/^  int nGranules;$/;"	m	struct:__anon1	file:
+nGranules	./formatbits.h	/^    int              nGranules;$/;"	m	struct:BF_FrameData
+new_choose_table	./L3loop.c	/^int new_choose_table( int ix[samp_per_frame2], unsigned int begin, unsigned int end )$/;"	f
+next	./formatbits.c	/^    struct side_info_link *next;$/;"	m	struct:side_info_link	typeref:struct:side_info_link::side_info_link	file:
+nextBackPtr	./formatbits.h	/^    int nextBackPtr;$/;"	m	struct:BF_FrameResults
+nrEntries	./formatbits.h	/^    unsigned long int nrEntries;$/;"	m	struct:__anon3
+off	./L3SubBand.c	/^static int off[2] = {0,0};$/;"	v	file:
+open_bit_stream_w	./bitstream.c	/^void open_bit_stream_w(bs, bs_filenam, size)$/;"	f
+original	./types.h	/^    int original;   \/* + *\/$/;"	m	struct:__anon12
+outer_loop	./L3loop.c	/^static int outer_loop( int max_bits,$/;"	f	file:
+outfile	./types.h	/^    char* outfile;  \/* For calling app's convenience *\/$/;"	m	struct:__anon13
+padding	./types.h	/^    int  padding;$/;"	m	struct:__anon12
+parse_command	./Main.c	/^static bool parse_command(int argc, char** argv, config_t *config)$/;"	f	file:
+part	./formatbits.h	/^    BF_BitstreamPart *part;$/;"	m	struct:BF_PartHolder
+part2_3_length	./Layer3.h	/^        unsigned part2_3_length;$/;"	m	struct:__anon4
+part2_length	./L3loop.c	/^int part2_length(L3_scalefac_t *scalefac, $/;"	f
+part2_length	./Layer3.h	/^        unsigned part2_length;$/;"	m	struct:__anon4
+preflag	./Layer3.h	/^        unsigned preflag;$/;"	m	struct:__anon4
+print_usage	./Main.c	/^static void print_usage()$/;"	f	file:
+private_bits	./Layer3.h	/^    unsigned private_bits;$/;"	m	struct:__anon5
+psyc	./types.h	/^    int  psyc;      \/* + *\/ \/* Which psy model - see Main.c *\/$/;"	m	struct:__anon12
+pt	./bitstream.h	/^    FILE        *pt;            \/* pointer to bit stream device *\/$/;"	m	struct:bit_stream_struc
+putMyBits	./L3bitstrea.c	/^void putMyBits( unsigned long int val, unsigned int len, void *config )$/;"	f
+putbits	./bitstream.c	/^void putbits(bitstream_t *bs, unsigned long int val, unsigned int N, config_t *config)$/;"	f
+putbits	./formatbits.h	/^    BitsFcnPtr       putbits;  \/* your low-level bitstream function *\/$/;"	m	struct:BF_FrameData
+quantize	./L3loop.c	/^int quantize(int ix[samp_per_frame2], int stepsize )$/;"	f
+quantizerStepSize	./Layer3.h	/^        int quantizerStepSize;$/;"	m	struct:__anon4
+read_samples	./wave.c	/^int read_samples(short *sample_buffer, int frame_size, config_t *config)$/;"	f
+region0_count	./Layer3.h	/^        unsigned region0_count;$/;"	m	struct:__anon4
+region1_count	./Layer3.h	/^        unsigned region1_count;$/;"	m	struct:__anon4
+resvDrain	./Layer3.h	/^    int resvDrain;$/;"	m	struct:__anon5
+s	./Layer3.h	/^    int s[2][2][13][3];         \/* [window][cb] *\/$/;"	m	struct:__anon10
+s	./tables.h	/^   int s[14];$/;"	m	struct:scalefac_struct
+samp_per_frame	./types.h	14;"	d
+samp_per_frame2	./types.h	15;"	d
+samplerate	./types.h	/^    long samplerate;    \/* + *\/$/;"	m	struct:__anon11
+samplerate_index	./types.h	/^    int  samplerate_index;  \/* + *\/ \/* See Main.c and Layer3.c *\/$/;"	m	struct:__anon12
+samples_per_frame	./types.h	/^    long samples_per_frame;$/;"	m	struct:__anon12
+scaleFactors	./formatbits.h	/^    BF_BitstreamPart *scaleFactors[MAX_GRANULES][MAX_CHANNELS];$/;"	m	struct:BF_FrameData
+scaleFactorsPH	./L3bitstrea.c	/^BF_PartHolder *scaleFactorsPH[ MAX_GRANULES ][ MAX_CHANNELS ];$/;"	v
+scale_bitcount	./L3loop.c	/^int scale_bitcount(L3_scalefac_t *scalefac, $/;"	f
+scalefac_band_long	./L3loop.c	/^int *scalefac_band_long  = &sfBandIndex[3].l[0];$/;"	v
+scalefac_compress	./Layer3.h	/^        unsigned scalefac_compress;$/;"	m	struct:__anon4
+scalefac_scale	./Layer3.h	/^        unsigned scalefac_scale;$/;"	m	struct:__anon4
+scalefac_struct	./tables.h	/^struct scalefac_struct$/;"	s
+scfsi	./Layer3.h	/^    unsigned scfsi[2][4];$/;"	m	struct:__anon5
+set_defaults	./Main.c	/^static void set_defaults(config_t *config)$/;"	f	file:
+sfBandIndex	./tables.c	/^struct scalefac_struct sfBandIndex[6] =$/;"	v	typeref:struct:scalefac_struct
+sfb_lmax	./Layer3.h	/^        unsigned sfb_lmax;$/;"	m	struct:__anon4
+side_info	./formatbits.c	/^    MYSideInfo           side_info;$/;"	m	struct:side_info_link	file:
+side_info_link	./formatbits.c	/^typedef struct side_info_link$/;"	s	file:
+side_info_link	./formatbits.c	/^} side_info_link;$/;"	t	typeref:struct:side_info_link	file:
+side_queue_free	./formatbits.c	/^static struct side_info_link *side_queue_free   = NULL;$/;"	v	typeref:struct:side_info_link	file:
+side_queue_head	./formatbits.c	/^static struct side_info_link *side_queue_head   = NULL;$/;"	v	typeref:struct:side_info_link	file:
+slen	./Layer3.h	/^        unsigned slen[4];$/;"	m	struct:__anon4
+slen1_tab	./L3bitstrea.c	/^static unsigned slen1_tab[16] = { 0, 0, 0, 0, 3, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4 };$/;"	v	file:
+slen1_tab	./L3loop.c	/^static int slen1_tab[16] = { 0, 0, 0, 0, 3, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4 };$/;"	v	file:
+slen2_tab	./L3bitstrea.c	/^static unsigned slen2_tab[16] = { 0, 1, 2, 3, 0, 1, 2, 3, 1, 2, 3, 1, 2, 3, 2, 3 };$/;"	v	file:
+slen2_tab	./L3loop.c	/^static int slen2_tab[16] = { 0, 1, 2, 3, 0, 1, 2, 3, 1, 2, 3, 1, 2, 3, 2, 3 };$/;"	v	file:
+spectrumSI	./formatbits.h	/^    BF_BitstreamPart *spectrumSI[MAX_GRANULES][MAX_CHANNELS];$/;"	m	struct:BF_FrameData
+spectrumSIPH	./L3bitstrea.c	/^BF_PartHolder *spectrumSIPH[ MAX_GRANULES ][ MAX_CHANNELS ];$/;"	v
+spectrumSIPH	./formatbits.c	/^  BF_PartHolder *spectrumSIPH[MAX_GRANULES][MAX_CHANNELS];$/;"	m	struct:__anon1	file:
+sstell	./bitstream.c	/^unsigned long sstell(bitstream_t *bs)$/;"	f
+start_time	./types.h	/^    time_t start_time;$/;"	m	struct:__anon13
+steptab	./L3loop.c	/^static double steptab[128]; \/* 2**(-x\/4)  for x = -127..0 *\/$/;"	v	file:
+steptabi	./L3loop.c	/^static long steptabi[128];  \/* 2**(-x\/4)  for x = -127..0 *\/$/;"	v	file:
+store_side_info	./formatbits.c	/^int store_side_info( BF_FrameData *info )$/;"	f
+subdivide	./L3loop.c	/^void subdivide(gr_info *cod_info)$/;"	f
+t10HB	./huffman.c	/^static HUFFBITS      t10HB[]   = {1, 2, 10, 23, 35, 30, 12, 17, 3, 3, 8, 12, 18, 21, 12, 7, 11, 9, 15, 21, 32, 40, 19, 6, 14, 13, 22, 34, 46, 23, 18, 7, 20, 19, 33, 47, 27, 22, 9, 3, 31, 22, 41, 26, 21, 20, 5, 3, 14, 13, 10, 11, 16, 6, 5, 1, 9, 8, 7, 8, 4 , 4, 2, 0};$/;"	v	file:
+t10l	./huffman.c	/^static unsigned char t10l[]  = {1, 3, 6, 8, 9, 9, 9, 10, 3, 4, 6, 7, 8, 9, 8, 8, 6, 6, 7, 8, 9, 10, 9, 9, 7, 7, 8, 9, 10, 10, 9, 10, 8, 8, 9, 10, 10, 10, 10, 10, 9, 9, 10, 10, 11, 11, 10, 11, 8, 8, 9, 10, 10, 10, 11, 11, 9, 8, 9, 10, 10, 11, 11, 11}; $/;"	v	file:
+t11HB	./huffman.c	/^static HUFFBITS      t11HB[]   = {3, 4, 10, 24, 34, 33, 21, 15, 5, 3, 4, 10, 32, 17, 11, 10, 11, 7, 13, 18, 30, 31, 20, 5, 25, 11, 19, 59, 27, 18, 12, 5, 35, 33, 31, 58, 30, 16, 7, 5, 28, 26, 32, 19, 17, 15, 8, 14, 14, 12, 9, 13, 14, 9, 4, 1, 11, 4, 6, 6, 6, 3, 2, 0};$/;"	v	file:
+t11l	./huffman.c	/^static unsigned char t11l[]  = {2, 3, 5, 7, 8, 9, 8, 9, 3, 3, 4, 6, 8, 8, 7, 8, 5, 5, 6, 7, 8, 9, 8, 8, 7, 6, 7, 9, 8, 10, 8, 9, 8, 8, 8, 9, 9, 10, 9, 10, 8, 8, 9, 10, 10, 11, 10, 11, 8, 7, 7, 8, 9, 10, 10, 10, 8, 7, 8, 9, 10, 10, 10, 10}; $/;"	v	file:
+t12HB	./huffman.c	/^static HUFFBITS      t12HB[]   = {9, 6, 16, 33, 41, 39, 38, 26, 7, 5, 6, 9, 23, 16, 26, 11, 17, 7, 11, 14, 21, 30, 10, 7, 17, 10, 15, 12, 18, 28, 14, 5, 32, 13, 22, 19, 18, 16, 9, 5, 40, 17, 31, 29, 17, 13, 4, 2, 27, 12, 11, 15, 10, 7, 4, 1, 27, 12, 8, 12 , 6, 3, 1, 0}; $/;"	v	file:
+t12l	./huffman.c	/^static unsigned char t12l[]  = {4, 3, 5, 7, 8, 9, 9, 9, 3, 3, 4, 5, 7, 7, 8, 8, 5, 4, 5, 6, 7, 8, 7, 8, 6, 5, 6, 6, 7, 8, 8, 8, 7, 6, 7, 7, 8, 8, 8, 9, 8, 7, 8, 8, 8, 9, 8, 9, 8, 7, 7, 8, 8, 9, 9, 10, 9, 8, 8, 9, 9, 9, 9, 10}; $/;"	v	file:
+t13HB	./huffman.c	/^static HUFFBITS      t13HB[]   = {1, 5, 14, 21, 34, 51, 46, 71, 42, 52, 68, 52, 67, 44, 43, 19, 3, 4, 12, 19, 31, 26, 44, 33, 31, 24, 32, 24, 31, 35, 22, 14, 15, 13, 23, 36, 59, 49, 77, 65, 29, 40, 30, 40, 27, 33, 42, 16, 22,$/;"	v	file:
+t13l	./huffman.c	/^static unsigned char t13l[]  = {1, 4, 6, 7, 8, 9, 9, 10, 9, 10, 11, 11, 12, 12, 13, 13, 3, 4, 6, 7, 8, 8, 9, 9, 9, 9, 10, 10, 11, 12, 12, 12, 6, 6, 7, 8, 9, 9, 10, 10, 9, 10, 10, 11, 11, 12, 13, 13, 7, 7, 8, 9, 9, 10, 10, 10, 10, 11, 11, 11, 11, 12, 13, 13, $/;"	v	file:
+t15HB	./huffman.c	/^static HUFFBITS      t15HB[]   = {7, 12, 18, 53, 47, 76, 124, 108, 89, 123, 108, 119, 107, 81, 122, 63, 13, 5, 16, 27, 46, 36, 61, 51, 42, 70, 52, 83, 65, 41, 59, 36, 19, 17, 15, 24, 41, 34, 59, 48, 40, 64, 50, 78, 62, 80, 56, $/;"	v	file:
+t15l	./huffman.c	/^static unsigned char t15l[]  = {3, 4, 5, 7, 7, 8, 9, 9, 9, 10, 10, 11, 11, 11, 12, 13, 4, 3, 5, 6, 7, 7, 8, 8, 8, 9, 9, 10, 10, 10, 11, 11, 5, 5, 5, 6, 7, 7, 8, 8, 8, 9, 9, 10, 10, 11, 11, 11, 6, 6, 6, 7, 7, 8, 8, 9, 9, 9, 10, 10, 10, 11, 11, 11, 7, 6, 7,$/;"	v	file:
+t16HB	./huffman.c	/^static HUFFBITS      t16HB[]   = {1, 5, 14, 44, 74, 63, 110, 93, 172, 149, 138, 242, 225, 195, 376, 17, 3, 4, 12, 20, 35, 62, 53, 47, 83, 75, 68, 119, 201, 107, 207, 9, 15, 13, 23, 38, 67, 58, 103, 90, 161, 72, 127, 117, $/;"	v	file:
+t16l	./huffman.c	/^static unsigned char t16l[]  = {1, 4, 6, 8, 9, 9, 10, 10, 11, 11, 11, 12, 12, 12, 13, 9, 3, 4, 6, 7, 8, 9, 9, 9, 10, 10, 10, 11, 12, 11, 12, 8, 6, 6, 7, 8, 9, 9, 10, 10, 11, 10, 11, 11, 11, 12, 12, 9, 8, 7, 8, 9, 9, 10, 10, 10, 11, 11, 12, 12, 12, 13, 13,$/;"	v	file:
+t1HB	./huffman.c	/^static HUFFBITS      t1HB[]   = {1, 1, 1, 0}; $/;"	v	file:
+t1l	./huffman.c	/^static unsigned char t1l[]  = {1, 3, 2, 3}; $/;"	v	file:
+t24HB	./huffman.c	/^static HUFFBITS      t24HB[]   = {15, 13, 46, 80, 146, 262, 248, 434, 426, 669, 653, 649, 621, 517, 1032, 88, 14, 12, 21, 38, 71, 130, 122, 216, 209, 198, 327, 345, 319, 297, 279, 42, 47, 22, 41, 74, 68, 128, 120, 221,$/;"	v	file:
+t24l	./huffman.c	/^static unsigned char t24l[]  = {4, 4, 6, 7, 8, 9, 9, 10, 10, 11, 11, 11, 11, 11, 12, 9, 4, 4, 5, 6, 7, 8, 8, 9, 9, 9, 10, 10, 10, 10, 10, 8, 6, 5, 6, 7, 7, 8, 8, 9, 9, 9, 9, 10, 10, 10, 11, 7, 7, 6, 7, 7, 8, 8, 8, 9, 9, 9, 9, 10, 10, 10, 10, 7, 8, 7, 7, 8,$/;"	v	file:
+t2HB	./huffman.c	/^static HUFFBITS      t2HB[]   = {1, 2, 1, 3, 1, 1, 3, 2, 0};$/;"	v	file:
+t2l	./huffman.c	/^static unsigned char t2l[]  = {1, 3, 6, 3, 3, 5, 5, 5, 6}; $/;"	v	file:
+t32HB	./huffman.c	/^static HUFFBITS      t32HB[]   = {1, 5, 4, 5, 6, 5, 4, 4, 7, 3, 6, 0, 7, 2, 3, 1};$/;"	v	file:
+t32l	./huffman.c	/^static unsigned char t32l[]  = {1, 4, 4, 5, 4, 6, 5, 6, 4, 5, 5, 6, 5, 6, 6, 6}; $/;"	v	file:
+t33HB	./huffman.c	/^static HUFFBITS      t33HB[]   = {15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};$/;"	v	file:
+t33l	./huffman.c	/^static unsigned char t33l[]  = {4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4}; $/;"	v	file:
+t3HB	./huffman.c	/^static HUFFBITS      t3HB[]   = {3, 2, 1, 1, 1, 1, 3, 2, 0};$/;"	v	file:
+t3l	./huffman.c	/^static unsigned char t3l[]  = {2, 2, 6, 3, 2, 5, 5, 5, 6}; $/;"	v	file:
+t5HB	./huffman.c	/^static HUFFBITS      t5HB[]   = {1, 2, 6, 5, 3, 1, 4, 4, 7, 5, 7, 1, 6, 1, 1, 0};$/;"	v	file:
+t5l	./huffman.c	/^static unsigned char t5l[]  = {1, 3, 6, 7, 3, 3, 6, 7, 6, 6, 7, 8, 7, 6, 7, 8}; $/;"	v	file:
+t6HB	./huffman.c	/^static HUFFBITS      t6HB[]   = {7, 3, 5, 1, 6, 2, 3, 2, 5, 4, 4, 1, 3, 3, 2, 0};$/;"	v	file:
+t6l	./huffman.c	/^static unsigned char t6l[]  = {3, 3, 5, 7, 3, 2, 4, 5, 4, 4, 5, 6, 6, 5, 6, 7}; $/;"	v	file:
+t7HB	./huffman.c	/^static HUFFBITS      t7HB[]   = {1, 2, 10, 19, 16, 10, 3, 3, 7, 10, 5, 3, 11, 4, 13, 17, 8, 4, 12, 11, 18, 15, 11, 2, 7, 6, 9, 14, 3, 1, 6, 4, 5, 3, 2, 0};$/;"	v	file:
+t7l	./huffman.c	/^static unsigned char t7l[]  = {1, 3, 6, 8, 8, 9, 3, 4, 6, 7, 7, 8, 6, 5, 7, 8, 8, 9, 7, 7, 8, 9, 9, 9, 7, 7, 8, 9, 9, 10, 8, 8, 9, 10, 10, 10}; $/;"	v	file:
+t8HB	./huffman.c	/^static HUFFBITS      t8HB[]   = {3, 4, 6, 18, 12, 5, 5, 1, 2, 16, 9, 3, 7, 3, 5, 14, 7, 3, 19, 17, 15, 13, 10, 4, 13, 5, 8, 11, 5, 1, 12, 4, 4, 1, 1, 0};$/;"	v	file:
+t8l	./huffman.c	/^static unsigned char t8l[]  = {2, 3, 6, 8, 8, 9, 3, 2, 4, 8, 8, 8, 6, 4, 6, 8, 8, 9, 8, 8, 8, 9, 9, 10, 8, 7, 8, 9, 10, 10, 9, 8, 9, 9, 11, 11}; $/;"	v	file:
+t9HB	./huffman.c	/^static HUFFBITS      t9HB[]   = {7, 5, 9, 14, 15, 7, 6, 4, 5, 5, 6, 7, 7, 6, 8, 8, 8, 5, 15, 6, 9, 10, 5, 1, 11, 7, 9, 6, 4, 1, 14, 4, 6, 2, 6, 0};$/;"	v	file:
+t9l	./huffman.c	/^static unsigned char t9l[]  = {3, 3, 5, 6, 8, 9, 3, 3, 4, 5, 6, 8, 4, 4, 5, 6, 7, 8, 6, 5, 6, 7, 7, 8, 7, 6, 7, 7, 8, 9, 8, 7, 8, 8, 9, 9}; $/;"	v	file:
+table	./huffman.h	/^  HUFFBITS *table;      \/*pointer to array[xlen][ylen]          *\/$/;"	m	struct:huffcodetab
+table_select	./Layer3.h	/^        unsigned table_select[3];$/;"	m	struct:__anon4
+total_frames	./types.h	/^    long total_frames;$/;"	m	struct:__anon12
+total_samples	./types.h	/^    long total_samples; \/* + *\/$/;"	m	struct:__anon11
+totbit	./bitstream.h	/^    long        totbit;         \/* bit counter of bit stream *\/$/;"	m	struct:bit_stream_struc
+true	./g_includes.h	6;"	d
+true	./types.h	105;"	d
+tt	./Layer3.h	/^            gr_info tt;$/;"	m	struct:__anon5::__anon6::__anon7
+type	./types.h	/^    int  type;$/;"	m	struct:__anon11
+type	./types.h	/^    int  type;$/;"	m	struct:__anon12
+update_status	./Layer3.c	/^static void update_status(int frames_processed, config_t *config)$/;"	f	file:
+update_status	./Layer3.c	24;"	d	file:
+user	./types.h	/^    void *user; \/* For the calling app's convenience *\/$/;"	m	struct:__anon13
+userFrameData	./formatbits.h	/^    BF_BitstreamPart *userFrameData;$/;"	m	struct:BF_FrameData
+userFrameDataPH	./L3bitstrea.c	/^BF_PartHolder *userFrameDataPH;$/;"	v
+userSpectrum	./formatbits.h	/^    BF_BitstreamPart *userSpectrum[MAX_GRANULES][MAX_CHANNELS];$/;"	m	struct:BF_FrameData
+userSpectrumPH	./L3bitstrea.c	/^BF_PartHolder *userSpectrumPH[ MAX_GRANULES ][ MAX_CHANNELS ];$/;"	v
+user_config	./formatbits.c	/^static void *user_config = NULL; \/* Data to pass user buffer writer *\/$/;"	v	file:
+value	./formatbits.h	/^    unsigned long int value;$/;"	m	struct:__anon2
+wave	./types.h	/^    wave_t wave;$/;"	m	struct:__anon13
+wave_close	./wave.c	/^void wave_close(config_t *config)$/;"	f
+wave_get	./wave.c	/^int wave_get(short buffer[2][samp_per_frame], void *config_in)$/;"	f
+wave_open	./wave.c	/^void wave_open(config_t *config)$/;"	f
+wave_t	./types.h	/^} wave_t;$/;"	t	typeref:struct:__anon11
+writePartMainData	./formatbits.c	/^int writePartMainData( BF_BitstreamPart *part, BF_FrameResults *results )$/;"	f
+writePartSideInfo	./formatbits.c	/^writePartSideInfo( BF_BitstreamPart *part, BF_FrameResults *results)$/;"	f
+write_ancillary_data	./L3bitstrea.c	/^static void write_ancillary_data( char *theData, int lengthInBits )$/;"	f	file:
+write_mp3	./Main.c	/^int  write_mp3(long bytes, void *buffer, void *config_in) {$/;"	f
+write_mp3	./types.h	/^    int  (*write_mp3)(long bytes, void *buffer, void *config_in); $/;"	m	struct:__anon13
+write_side_info	./formatbits.c	/^int write_side_info()$/;"	f
+x	./L3SubBand.c	/^static long x[2][HAN_SIZE];$/;"	v	file:
+xlen	./huffman.h	/^  unsigned int xlen;    \/*max. x-index+                         *\/ $/;"	m	struct:huffcodetab
+xm_scfsi_band_krit	./L3loop.c	213;"	d	file:
+xr	./L3loop.c	/^  *xr,                    \/* magnitudes of the spectral values *\/$/;"	v	file:
+xrabs	./L3loop.c	/^  xrabs[samp_per_frame2], \/* xr absolute *\/$/;"	v	file:
+xrmax	./L3loop.c	/^  xrmax;                  \/* maximum of xrabs array *\/$/;"	v	file:
+xrsq	./L3loop.c	/^  xrsq[samp_per_frame2],  \/* xr squared *\/$/;"	v	file:
+ylen	./huffman.h	/^  unsigned int ylen;    \/*max. y-index+                         *\/$/;"	m	struct:huffcodetab
+z	./L3SubBand.c	/^static long z[2][HAN_SIZE];$/;"	v	file:
