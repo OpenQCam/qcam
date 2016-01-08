@@ -681,9 +681,6 @@ bool BaseV4L2VideoCapture::v4l2_s_fmt(uint32_t width, uint32_t height, uint32_t 
     return false;
   }
 
-  if(fmt == V4L2_PIX_FMT_MJPEG) {
-    FATAL("hi");
-  }
    // QIC XU control
   if(fmt == V4L2_PIX_FMT_MPEG){
     EncoderParams_t params;
@@ -700,7 +697,8 @@ bool BaseV4L2VideoCapture::v4l2_s_fmt(uint32_t width, uint32_t height, uint32_t 
     if (QicEuSetVideoResolution(width,height) <0 ) {
       FATAL("QicEuSetVideoResolution failed");
     }
-    QicSetStreamFormat(FORMAT_STREAM_H264_RAW_3);
+    //c1 function is not supported now
+    //QicSetStreamFormat(FORMAT_STREAM_H264_RAW_3);
     QicSetEncoderFrameSizeFormat(FORMAT_STREAM_H264_ADD_PADDING);
   }
   return true;
