@@ -681,17 +681,24 @@ bool BaseV4L2VideoCapture::v4l2_s_fmt(uint32_t width, uint32_t height, uint32_t 
     return false;
   }
 
+  if(fmt == V4L2_PIX_FMT_MJPEG) {
+    FATAL("hi");
+  }
    // QIC XU control
   if(fmt == V4L2_PIX_FMT_MPEG){
     EncoderParams_t params;
     CLEAR(params);
     QicChangeFD(_deviceFD);
-    QicEncoderGetParams(&params);
+    //c1 functions
+    /*QicEncoderGetParams(&params);
     params.usWidth = width;
     params.usHeight = height;
     if( QicEncoderSetParams(&params, QIC_XU1_ENCODER_RESOLUTION) < 0){
       FATAL("QicEncoderSetParams failed");
       return false;
+    }*/
+    if (QicEuSetVideoResolution(width,height) <0 ) {
+      FATAL("QicEuSetVideoResolution failed");
     }
     QicSetStreamFormat(FORMAT_STREAM_H264_RAW_3);
     QicSetEncoderFrameSizeFormat(FORMAT_STREAM_H264_ADD_PADDING);
