@@ -1,6 +1,6 @@
-# OpenQCam
+#QCam
 
-OpenQCam is a streaming server based on crtmpserver. It receive H.264 video stream from QIC1832 encoding camera and deliver to internet by streaming protocols such as RTSP and MJPG over HTTP.
+QCam is a streaming server based on crtmpserver. It receive H.264 video stream from QIC1832 encoding camera and deliver to internet by streaming protocols such as RTSP and MJPG over HTTP.
 
 # Usage
 
